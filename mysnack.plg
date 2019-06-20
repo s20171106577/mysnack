@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mysnack - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSP7334.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/mysnack.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp"
+]
+Creating command line "cl.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSP7334.tmp" 
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSP7345.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/mysnack.pdb" /debug /machine:I386 /out:"Debug/mysnack.exe" /pdbtype:sept 
+.\Debug\mysnack.obj
+]
+Creating command line "link.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSP7345.tmp"
+<h3>Output Window</h3>
+Compiling...
+mysnack.cpp
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : error C2628: 'SHE' followed by 'int' is illegal (did you forget a ';'?)
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : error C2079: 'Fx' uses undefined struct 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : error C2079: 'Fy' uses undefined struct 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(13) : error C2447: missing function header (old-style formal list?)
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(35) : error C2027: use of undefined type 'SHE'
+        c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : see declaration of 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(36) : error C2027: use of undefined type 'SHE'
+        c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : see declaration of 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(36) : error C2227: left of '->x' must point to class/struct/union
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(37) : error C2027: use of undefined type 'SHE'
+        c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : see declaration of 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(37) : error C2227: left of '->y' must point to class/struct/union
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(38) : error C2027: use of undefined type 'SHE'
+        c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(9) : see declaration of 'SHE'
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(38) : error C2227: left of '->next' must point to class/struct/union
+c:\users\hsy520xdb\desktop\mysnack\mysnack.cpp(70) : fatal error C1004: unexpected end of file found
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+mysnack.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
