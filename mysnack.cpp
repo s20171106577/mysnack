@@ -4,12 +4,12 @@
 #include<conio.h>
 #define HENG 80
 #define SHU 25  //HENG是宽度，SHU是高度
-struct SHE
 #define TIME 400 //蛇的初始速度
 int Fx, Fy;  //食物的位置
 int fen;   //得分
 int fang; //方向参数
 int Tx, Ty;//构造蛇身
+struct SHE
 {
     int x;
     int y;
@@ -20,6 +20,7 @@ int Move(struct SHE *head);
 void Gotoxy(int x, int y);
 void Huitu(struct SHE *head);
 struct SHE *Link(struct SHE *head);
+int Panduan(struct SHE *head, int x, int y);
 int main(void)
 {
     struct SHE *head = NULL;
@@ -66,5 +67,16 @@ int main(void)
                     ;
             }
         }
-
-      
+        do
+        {
+            Gotoxy(19,21);
+            printf("是否继续？Y/N:");
+            scanf(" %c", &m);
+            system("cls");
+        }
+ while (m != 'Y' && m != 'y' && m != 'n' && m != 'N');
+    }
+ while (m == 'Y' || m == 'y');
+    return 0;
+}//绘图
+     
