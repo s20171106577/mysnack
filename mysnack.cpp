@@ -136,4 +136,27 @@ int Move(struct SHE *head)
             default:
                 break;
         }
-    }
+    }	
+    switch (fang)
+    {
+        case 1:
+            toy = (head -> y) - 1;
+            tox = (head -> x);
+            break;
+        case 2:
+            tox = (head -> x) + 2;
+            toy = (head -> y);
+            break;
+        case 3:
+            toy = (head -> y) + 1;
+            tox = (head -> x);
+            break;
+        case 4:
+            tox = (head -> x) - 2;
+            toy = (head -> y);
+            break;
+        default:
+            break;
+	}
+
+    
