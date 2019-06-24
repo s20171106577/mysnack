@@ -79,4 +79,61 @@ int main(void)
  while (m == 'Y' || m == 'y');
     return 0;
 }//绘图
-     
+void Huitu(struct SHE *head)
+{
+    int flag = 1;
+    while (head != NULL)
+    {
+        Gotoxy(head -> x, head -> y);
+        if (flag == 1)
+        {
+            printf("□");
+        }
+        else if (flag == 2)
+        {
+            printf("■");
+        }
+        else
+            ;
+        Gotoxy(Tx, Ty);
+        printf(" ");
+        flag++;
+        head = head -> next;
+    }
+}//用于光标的移动
+void Gotoxy(int x, int y)
+{
+  COORD coord; 
+  coord.X = x; 
+  coord.Y = y; 
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}//食物位置
+int Move(struct SHE *head)
+{
+    char op;
+    int tox, toy, flag, temp;
+    if (kbhit())
+    {
+        op = getch();
+        switch (op)
+        {
+            case 'w':
+                if (fang != 3)
+                fang = 1;
+                break;
+            case 'd':
+                if (fang != 4)
+                fang = 2;
+                break;
+            case 's':
+                if (fang != 1)
+                fang = 3;
+                break;
+            case 'a':
+                if (fang != 2)
+                fang = 4;
+                break;
+            default:
+                break;
+        }
+    }
