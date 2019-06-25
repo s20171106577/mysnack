@@ -9,18 +9,22 @@ int Fx, Fy;  //食物的位置
 int fen;   //得分
 int fang; //方向参数
 int Tx, Ty;//构造蛇身
+int Panduan(struct SHE *head, int x, int y);
+//int temp;    
+int Move(struct SHE *head);
+void Food(struct SHE *head);
+void Gotoxy(int x, int y);
+void Huitu(struct SHE *head);
+void FreeShe(struct SHE *head);
+void Gameover(void);
+struct SHE *Link(struct SHE *head);
 struct SHE
 {
     int x;
     int y;
     struct SHE *next;
 };
-void Food(struct SHE *head);
-int Move(struct SHE *head);
-void Gotoxy(int x, int y);
-void Huitu(struct SHE *head);
-struct SHE *Link(struct SHE *head);
-int Panduan(struct SHE *head, int x, int y);
+
 int main(void)
 {
     struct SHE *head = NULL;
@@ -39,8 +43,6 @@ int main(void)
         head -> y = 13;
         head -> next = NULL;
         Food(head);
-		void FreeShe(struct SHE *head);
-		void Gameover(void);
         while (1)
         {
             Huitu(head);
@@ -111,7 +113,7 @@ void Gotoxy(int x, int y)
 int Move(struct SHE *head)
 {
     char op;
-    int tox, toy, flag, temp;
+    int tox, toy, flag;
     if (kbhit())
     {
         op = getch();
@@ -158,5 +160,8 @@ int Move(struct SHE *head)
         default:
             break;
 	}
-
-    
+ while (flag == 1);
+    Gotoxy(Fx, Fy);
+    printf("■");
+};//用于蛇的移动
+ 

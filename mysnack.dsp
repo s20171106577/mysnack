@@ -80,9 +80,5 @@ LINK32=link.exe
 
 # Name "mysnack - Win32 Release"
 # Name "mysnack - Win32 Debug"
-# Begin Source File
-
-SOURCE=.\mysnack.cpp
-# End Source File
 # End Target
 # End Project
