@@ -196,5 +196,14 @@ flag = Panduan(head,tox,toy);
    {
 	   return 0;//ÓÎÏ·½áÊø
    }
+   else if (flag == 1)
+    {
+        head = Link(head);
+        fen++;
+    }
+    else
+    {
+        ;
+    }
 
 
