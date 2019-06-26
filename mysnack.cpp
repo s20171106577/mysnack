@@ -191,5 +191,10 @@ int Move(struct SHE *head)
     Gotoxy(Fx, Fy);
     printf("■");
 };//用于蛇的移动
+flag = Panduan(head,tox,toy);
+   if(flag == 0)
+   {
+	   return 0;//游戏结束
+   }
 
 
