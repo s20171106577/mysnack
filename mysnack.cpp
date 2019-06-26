@@ -110,6 +110,33 @@ void Gotoxy(int x, int y)
   coord.Y = y; 
   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }//食物位置
+void Food(struct SHE *head)
+{
+    int flag = 0;
+    struct SHE *pr = head;
+    do
+    {
+        srand(GetTickCount());
+        Fx = (rand()%40) * 2;
+        Fy = (rand()%12) * 2;
+        flag = 0;
+        pr = head;
+        while (pr != NULL) //防止食物位置与蛇形重合
+        {
+            if (pr -> x == Fx && pr -> y == Fy)
+            {
+                flag = 1;
+                break;
+            }
+            pr = pr -> next;
+        }
+    }
+ while (flag == 1);
+    Gotoxy(Fx, Fy);
+    printf("■");
+}//用于蛇的移动
+
+
 int Move(struct SHE *head)
 {
     char op;
@@ -164,4 +191,5 @@ int Move(struct SHE *head)
     Gotoxy(Fx, Fy);
     printf("■");
 };//用于蛇的移动
- 
+
+
