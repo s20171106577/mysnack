@@ -134,12 +134,10 @@ void Food(struct SHE *head)
     Gotoxy(Fx, Fy);
     printf("■");
 }//用于蛇的移动
-
-
 int Move(struct SHE *head)
 {
     char op;
-    int tox, toy, flag;
+    int tox, toy, flag,temp;
     if (kbhit())
     {
         op = getch();
@@ -186,10 +184,7 @@ int Move(struct SHE *head)
         default:
             break;
 		}
-	while (flag == 1);
-	Gotoxy(Fx, Fy);
-    printf("■");
-};//用于蛇的移动
+};
 flag = Panduan(head,tox,toy);
    if(flag == 0)
    {
