@@ -6,34 +6,43 @@
 --------------------Configuration: mysnack - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPBA92.tmp" with contents
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSP553E.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/mysnack.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp"
 ]
-Creating command line "cl.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPBA92.tmp" 
-Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPBA93.tmp" with contents
+Creating command line "cl.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSP553E.tmp" 
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSP553F.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/mysnack.pdb" /debug /machine:I386 /out:"Debug/mysnack.exe" /pdbtype:sept 
 .\Debug\mysnack.obj
 ]
-Creating command line "link.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPBA93.tmp"
+Creating command line "link.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSP553F.tmp"
 <h3>Output Window</h3>
 Compiling...
 mysnack.cpp
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2501: 'flag' : missing storage-class or type specifiers
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2065: 'head' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2065: 'tox' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2065: 'toy' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(195) : error C2143: syntax error : missing ';' before 'if'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(196) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(196) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(199) : error C2143: syntax error : missing ';' before 'else'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(200) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(200) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(204) : error C2143: syntax error : missing ';' before 'else'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(205) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(205) : error C2447: missing function header (old-style formal list?)
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(193) : error C2501: 'flag' : missing storage-class or type specifiers
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(193) : error C2065: 'head' : undeclared identifier
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(193) : error C2065: 'tox' : undeclared identifier
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(193) : error C2065: 'toy' : undeclared identifier
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2143: syntax error : missing ';' before 'if'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(195) : error C2143: syntax error : missing ';' before '{'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(195) : error C2447: missing function header (old-style formal list?)
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(198) : error C2143: syntax error : missing ';' before 'else'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(199) : error C2143: syntax error : missing ';' before '{'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(199) : error C2447: missing function header (old-style formal list?)
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(203) : error C2143: syntax error : missing ';' before 'else'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(204) : error C2143: syntax error : missing ';' before '{'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(204) : error C2447: missing function header (old-style formal list?)
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(207) : error C2143: syntax error : missing ';' before 'while'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(208) : error C2143: syntax error : missing ';' before '{'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(208) : error C2447: missing function header (old-style formal list?)
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(217) : error C2501: 'ruturn' : missing storage-class or type specifiers
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(218) : error C2143: syntax error : missing ';' before '}'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(218) : error C2143: syntax error : missing ';' before '}'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(218) : error C2143: syntax error : missing ';' before '}'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(220) : error C2143: syntax error : missing ';' before '{'
+C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(220) : error C2447: missing function header (old-style formal list?)
 Ö´ÐÐ cl.exe Ê±³ö´í.
 
 

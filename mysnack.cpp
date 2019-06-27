@@ -10,7 +10,6 @@ int fen;   //得分
 int fang; //方向参数
 int Tx, Ty;//构造蛇身
 int Panduan(struct SHE *head, int x, int y);
-//int temp;    
 int Move(struct SHE *head);
 void Food(struct SHE *head);
 void Gotoxy(int x, int y);
@@ -167,9 +166,9 @@ int Move(struct SHE *head)
         }
     }	
     switch (fang)
-    {
-        case 1:
-            toy = (head -> y) - 1;
+		{
+		case 1:
+			toy = (head -> y) - 1;
             tox = (head -> x);
             break;
         case 2:
@@ -186,9 +185,9 @@ int Move(struct SHE *head)
             break;
         default:
             break;
-	}
- while (flag == 1);
-    Gotoxy(Fx, Fy);
+		}
+	while (flag == 1);
+	Gotoxy(Fx, Fy);
     printf("■");
 };//用于蛇的移动
 flag = Panduan(head,tox,toy);
@@ -205,5 +204,47 @@ flag = Panduan(head,tox,toy);
     {
         ;
     }
+	while(head != NULL)
+	{
+		temp = head ->x;
+		head ->x = tox;
+		tox = temp;
+		temp = head -> y;
+        head -> y = toy;
+        toy = temp;
+        head = head -> next;
+	}
+	ruturn = 1;
+}//判断食物和失败条件
+int Panduan(struct SHE *head, int x, int y)
+{
+    int flag = 1;
+    if (x < 0 || x > HENG - 1 || y < 0 || y > SHU - 1)
+    {
+        return 0;  //撞墙
+    }
+    while (head != NULL)
+    {
+        if (head -> x == x && head -> y == y && flag != 1)
+        {
+            return 0; //咬到自己
+        }
+        flag++;
+        if (head -> next == NULL)
+        {
+            Tx = head -> x;
+            Ty = head -> y;
+        }
+        head = head -> next;
+    }
+    if (x == Fx && y == Fy)
+    {
+        return 1;//有食物
+    }
+    return 2;//无异常
+}//蛇身增长
+
+
+
 
 
