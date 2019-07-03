@@ -11,7 +11,6 @@ void FreeShe(struct SHE *head);
 void Gameover(void);
 void Huitu(struct SHE *head);
 int Move(struct SHE *head);
-int Panduan(struct SHE *head, int x, int y);
 int Fx, Fy;  //食物的位置
 int fen;   //得分
 int fang; //方向参数
