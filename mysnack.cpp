@@ -1,22 +1,22 @@
-#include<stdio.h>                       
-#include<windows.h>                                               
+#include<stdio.h>
+#include<windows.h>
 #include<stdlib.h>                                                          
-#include<conio.h>                                                                 
+#include<conio.h>
 #define HENG 80
 #define SHU 25  //HENG是宽度，SHU是高度
 #define TIME 400 //蛇的初始速度
-void Gotoxy(int x, int y);     
+void Gotoxy(int x, int y);
 void Food(struct SHE *head);
-int Move(struct SHE *head);                 
-int Panduan(struct SHE *head, int x, int y);
-struct SHE *Link(struct SHE *head);                               
 void FreeShe(struct SHE *head);
 void Gameover(void);
 void Huitu(struct SHE *head);
+int Move(struct SHE *head);
+int Panduan(struct SHE *head, int x, int y);
 int Fx, Fy;  //食物的位置
 int fen;   //得分
 int fang; //方向参数
 int Tx, Ty;
+struct SHE *Link(struct SHE *head);
 //构造蛇身
 struct SHE
 {
@@ -142,7 +142,7 @@ int Move(struct SHE *head)
 {
     char op;
     int tox, toy, flag, temp;
-    if (kbhit())  //kbhit函数用于检查当前是否有键盘输入，若有则返回一个非0值，否则返回0，需头文件conio.h
+    if (kbhit())  //检查键盘输入
     {
         op = getch();
         switch (op)
@@ -191,7 +191,7 @@ int Move(struct SHE *head)
   flag = Panduan(head, tox, toy);
     if (flag == 0)
     {
-        return 0; //game over
+        return 0; //游戏结束
     }
     else if (flag == 1)
     {
