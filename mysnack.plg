@@ -6,104 +6,27 @@
 --------------------Configuration: mysnack - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPDF20.tmp" with contents
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPC94.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/mysnack.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp"
 ]
-Creating command line "cl.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPDF20.tmp" 
-Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPDF21.tmp" with contents
+Creating command line "cl.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPC94.tmp" 
+Creating temporary file "C:\Users\HSY520~1\AppData\Local\Temp\RSPC95.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/mysnack.pdb" /debug /machine:I386 /out:"Debug/mysnack.exe" /pdbtype:sept 
 .\Debug\mysnack.obj
 ]
-Creating command line "link.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPDF21.tmp"
+Creating command line "link.exe @C:\Users\HSY520~1\AppData\Local\Temp\RSPC95.tmp"
 <h3>Output Window</h3>
 Compiling...
 mysnack.cpp
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(140) : warning C4101: 'flag' : unreferenced local variable
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(140) : warning C4101: 'temp' : unreferenced local variable
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(188) : error C2501: 'flag' : missing storage-class or type specifiers
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(188) : error C2065: 'head' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(188) : error C2065: 'tox' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(188) : error C2065: 'toy' : undeclared identifier
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(189) : error C2143: syntax error : missing ';' before 'if'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(190) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(190) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(193) : error C2143: syntax error : missing ';' before 'else'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(194) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(198) : error C2143: syntax error : missing ';' before 'else'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(199) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(199) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(202) : error C2143: syntax error : missing ';' before 'while'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(203) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(203) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(212) : error C2501: 'ruturn' : missing storage-class or type specifiers
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(213) : error C2143: syntax error : missing ';' before '}'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(213) : error C2143: syntax error : missing ';' before '}'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(213) : error C2143: syntax error : missing ';' before '}'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(215) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(215) : error C2447: missing function header (old-style formal list?)
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2143: syntax error : missing ';' before '/'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xd3'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xce'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xcf'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb7'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xca'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xa7'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb0'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xdc'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbb'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xad'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc3'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xe6'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xa3'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xac'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc8'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xe7'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb9'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xfb'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb4'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb0'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbf'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xda'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb4'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xf3'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xd0'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xa1'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb2'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbb'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xca'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc7'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb5'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbc'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xd6'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc2'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbb'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xad'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc3'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xe6'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb2'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbb'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xd0'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xad'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xb5'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xf7'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xbf'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc9'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc9'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xe1'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xc8'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(279) : error C2018: unknown character '0xa5'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(281) : error C2143: syntax error : missing ';' before '{'
-C:\Users\hsy520xdb\Desktop\mysnack\mysnack.cpp(281) : error C2447: missing function header (old-style formal list?)
-Ö´ÐÐ cl.exe Ê±³ö´í.
+Linking...
 
 
 
 <h3>Results</h3>
-mysnack.exe - 1 error(s), 0 warning(s)
+mysnack.exe - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>
