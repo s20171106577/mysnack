@@ -4,7 +4,7 @@
 #include<conio.h>
 #define HENG 80
 #define SHU 25  //HENG是宽度，SHU是高度
-#define TIME 400 //蛇的初始速度
+#define TIME 200 //蛇的初始速度
 void Gotoxy(int x, int y);
 void Food(struct SHE *head);
 void FreeShe(struct SHE *head);
@@ -17,13 +17,16 @@ int fen;   //得分
 int fang; //方向参数
 int Tx, Ty;
 struct SHE *Link(struct SHE *head);
+
 //构造蛇身
+
 struct SHE
 {
     int x;
     int y;
     struct SHE *next;
 };
+
 int main(void)
 {
     struct SHE *head = NULL;
@@ -37,8 +40,8 @@ int main(void)
         temp = fen;
         times = TIME;
         head = NULL;
-        head = (struct SHE *)malloc(sizeof(struct SHE));
-        head -> x = 40;
+        head = (struct SHE *)malloc(sizeof(struct SHE));//请求头空间
+        head -> x = 20;
         head -> y = 13;
         head -> next = NULL;
         Food(head);
@@ -75,12 +78,15 @@ int main(void)
             scanf(" %c", &m);
             system("cls");
         }
+
  while (m != 'Y' && m != 'y' && m != 'n' && m != 'N');
     }
  while (m == 'Y' || m == 'y');
     return 0;
 }
+
 //绘图
+
 void Huitu(struct SHE *head)
 {
     int flag = 1;
@@ -103,7 +109,9 @@ void Huitu(struct SHE *head)
         head = head -> next;
     }
 }
+
 //用于光标的移动
+
 void Gotoxy(int x, int y)
 {
   COORD coord; 
@@ -111,7 +119,10 @@ void Gotoxy(int x, int y)
   coord.Y = y;
   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+
 //食物位置构造
+
+
 void Food(struct SHE *head)
 {
     int flag = 0;
@@ -137,12 +148,14 @@ void Food(struct SHE *head)
     Gotoxy(Fx, Fy);
     printf("■");
 }
+
 //用于蛇的移动
+
 int Move(struct SHE *head)
 {
     char op;
     int tox, toy, flag, temp;
-    if (kbhit())  //检查键盘输入
+    if (kbhit())  //键盘输入
     {
         op = getch();
         switch (op)
@@ -167,6 +180,7 @@ int Move(struct SHE *head)
                 break;
         }
     }
+
   switch (fang)
     {
         case 1:
@@ -188,6 +202,7 @@ int Move(struct SHE *head)
         default:
             break;
   }
+
   flag = Panduan(head, tox, toy);
     if (flag == 0)
     {
@@ -214,7 +229,9 @@ int Move(struct SHE *head)
     }
     return 1;
 }
+
 //用于食物与失败条件的判断
+
 int Panduan(struct SHE *head, int x, int y)
 {
     int flag = 1;
@@ -242,7 +259,9 @@ int Panduan(struct SHE *head, int x, int y)
     }
     return 2;//无异常
 }
+
 //蛇身增长
+
 struct SHE *Link(struct SHE *head)
 {
     struct SHE *p, *pr;
@@ -270,7 +289,9 @@ struct SHE *Link(struct SHE *head)
     p -> next = NULL;
     return head;
 }
+
 //释放内存
+
 void FreeShe(struct SHE *head)
 {
     struct SHE *pr = NULL;
@@ -281,7 +302,9 @@ void FreeShe(struct SHE *head)
         free(pr);
     }
 }
+
 //游戏失败画面，如果窗口大小不是80*25导致画面不协调可舍去
+
 void Gameover(void)
 {
     int i,j;
@@ -336,7 +359,9 @@ void Gameover(void)
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
         
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-};
+
+	};
+
     Gotoxy(0, 0);
     for (i = 0; i < SHU; i++)
     {
@@ -352,6 +377,6 @@ void Gameover(void)
             }
         }
     }
-    Gotoxy(19, 20);
+    Gotoxy(90, 20);
     printf("游戏最终得分是 %d 分！！！\n", fen);
 }
