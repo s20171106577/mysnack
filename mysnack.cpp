@@ -48,7 +48,7 @@ int main(void)
         while (1)
         {
             Huitu(head);
-            Sleep(times);
+            Sleep(times);//休眠，毫秒
             if (0 == Move(head))
             {
                 FreeShe(head);
@@ -114,10 +114,10 @@ void Huitu(struct SHE *head)
 
 void Gotoxy(int x, int y)
 {
-  COORD coord; 
+  COORD coord; //坐标转换
   coord.X = x;
   coord.Y = y;
-  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);//食物在这个位置产生
 }
 
 //食物位置构造
@@ -130,7 +130,7 @@ void Food(struct SHE *head)
     do
     {
         srand(GetTickCount()); //毫秒级
-        Fx = (rand()%40) * 2;
+        Fx = (rand()%40) * 2;//随机
         Fy = (rand()%12) * 2;
         flag = 0;
         pr = head;
